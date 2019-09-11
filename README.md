@@ -1,24 +1,11 @@
 # vuetify-admin
-vuetify ui 1.5
+vuetify ui 2.0.16
 vue cli 3
+vue 2.6.10
+安装 启动 打包命令见 package.json
 
+## 路由模块
+1. src根目录下建立 guards.js 路由拦截
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+## 页面布局
+1. app.vue 利用 vuetify 提供的组件进行自由搭建

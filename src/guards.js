@@ -1,4 +1,4 @@
-import router from './router'
+import router from './router/index'
 
 /**
  * 路由前置守卫

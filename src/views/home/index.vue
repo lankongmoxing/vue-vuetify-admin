@@ -1,16 +1,21 @@
 <template>
   <div>
     home
+    <v-btn @click="goToLogin">Login</v-btn>
     <v-btn @click="goToTable">table</v-btn>
   </div>
 </template>
 <script>
 export default {
   created () {
-  // 调用 vuex 中的方法判断动态添加路由
-    this.$store.dispatch('addRoutes')
   },
   methods: {
+    // 前往login页面
+    goToLogin () {
+      this.$router.push({
+        path: '/login'
+      })
+    },
     // 前往table页面
     goToTable () {
       this.$router.push({

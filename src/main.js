@@ -19,3 +19,7 @@ new Vue({
   vuetify: new Vuetify(),
   render: h => h(App)
 }).$mount('#app')
+
+/**
+ * 静态路由要在vue实例化之前挂载
+ */

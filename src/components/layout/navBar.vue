@@ -1,0 +1,10 @@
+<template>
+  <v-app-bar
+    app
+    color="indigo"
+    dark
+  >
+    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-toolbar-title>vue-vuetify-admin</v-toolbar-title>
+  </v-app-bar>
+</template>

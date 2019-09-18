@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-    <v-app>
-      <!-- router-view 渲染路径匹配到的视图组件 -->
+    <v-app v-if="singlePage">
       <router-view />
     </v-app>
+    <v-app v-else>
+      <navBar></navBar>
+      <sideBar></sideBar>
+      <contentBox></contentBox>
+      <footerBar></footerBar>
+    </v-app>
+
   </div>
 </template>
 
@@ -11,12 +17,27 @@
 </style>
 
 <script>
+import navBar from '@/components/layout/navBar'
+import sideBar from '@/components/layout/sideBar'
+import contentBox from '@/components/layout/contentBox'
+import footerBar from '@/components/layout/footerBar'
 export default {
   data () {
     return {
     }
   },
   created () {
+  },
+  computed: {
+    singlePage () {
+      return this.$route.path === '/login'
+    }
+  },
+  components: {
+    navBar,
+    sideBar,
+    contentBox,
+    footerBar
   }
 }
 </script>

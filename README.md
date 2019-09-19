@@ -1,5 +1,5 @@
 # vuetify-admin
-vuetify ui 2.0.16
+vuetify ui 2.0.15
 vue cli 3
 vue 2.6.10
 安装/启动/打包命令见 package.json

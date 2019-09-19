@@ -1,6 +1,13 @@
 const state = {}
 
-const mutations = {}
+const mutations = {
+  CLEAR_TOKEN () {
+    localStorage.token = ''
+  },
+  CLEAR_MENU () {
+    localStorage.menu = ''
+  }
+}
 
 const actions = {
   /**
@@ -22,6 +29,15 @@ const actions = {
       localStorage.menu = JSON.stringify(menu)
       resolve()
     })
+  },
+  /**
+   * 退出登录
+   * 清除token，router
+   * 跳转登录页面
+   */
+  loginOut ({ commit }) {
+    commit('CLEAR_TOKEN')
+    commit('CLEAR_MENU')
   }
 }
 

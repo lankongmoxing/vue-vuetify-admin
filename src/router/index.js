@@ -8,12 +8,18 @@ const constantRoutes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/views/home/index')
+    component: () => import('@/views/home/index'),
+    meta: {
+      hidden: false
+    }
   },
   {
     path: '/login',
     name: '登录',
-    component: () => import('@/views/login/index')
+    component: () => import('@/views/login/index'),
+    meta: {
+      hidden: true
+    }
   }
 ]
 
@@ -22,7 +28,10 @@ const asyncRoutes = [
   {
     path: '/table',
     name: '表格',
-    component: () => import('@/views/table/index')
+    component: () => import('@/views/table/index'),
+    meta: {
+      hidden: false
+    }
   }
 ]
 

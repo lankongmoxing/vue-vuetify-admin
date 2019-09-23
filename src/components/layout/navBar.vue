@@ -5,6 +5,9 @@ import navBar from '@/components/layout/navBar';
     color="indigo"
     dark
   >
+
+    <svg-icon icon-class="user" />
+
     <v-row class="navBar">
       <v-toolbar-title class="left">vue-vuetify-admin</v-toolbar-title>
 

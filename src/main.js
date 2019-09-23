@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 import './guards' // 导航守卫
+import './icons'
 
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'

@@ -25,3 +25,4 @@ vue 2.6.10
 
 ### icon组件
 计划使用 svg 定义 icon
+svgo 只获取展示svg必须的path

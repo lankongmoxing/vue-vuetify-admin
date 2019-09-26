@@ -21,8 +21,12 @@ vue 2.6.10
 根据路由表以及自定义规则生成菜单，mapGetter导出
 如果跳转路由和当前路由一致，则不做跳转
 
+### icon组件
+将svg封装成组件
+svgo 只获取展示svg必须的path
+
+
 ## 待完成
 
-### icon组件
-计划使用 svg 定义 icon
-svgo 只获取展示svg必须的path
+### vuetify 引用说明
+1. 最新版本的vuetify在vue中的引用说明文档

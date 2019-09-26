@@ -61,8 +61,8 @@ export default {
       passwordRules: [
         v => !!v || '请输入密码'
       ],
-      username: '1', // 用户名
-      password: '1' // 密码
+      username: 'admin', // 用户名
+      password: '123456' // 密码
     }
   },
   methods: {

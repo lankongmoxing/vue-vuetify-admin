@@ -20,6 +20,14 @@ const constantRoutes = [
     meta: {
       hidden: true
     }
+  },
+  {
+    path: '/icon/vIcon',
+    name: 'v-icon',
+    component: () => import('@/views/icon/vIcon'),
+    meta: {
+      hidden: false
+    }
   }
 ]
 
